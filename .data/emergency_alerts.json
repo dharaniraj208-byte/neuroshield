@@ -1,0 +1,136 @@
+[
+  {
+    "id": "ALT-8546",
+    "patientId": "PT-8831",
+    "patientName": "Ramesh Sundaram (Age 64)",
+    "patientPhone": "+91 98401 54321",
+    "verifiedPhone": true,
+    "room": "Rehab Bay 104",
+    "type": "SLIDE_DOWN",
+    "severity": "CRITICAL",
+    "timestamp": "2026-10-20T07:56:27.613Z",
+    "location": {
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "accuracy": 8,
+      "label": "Rehab Bay 104, Floor 3 Neurology Ward"
+    },
+    "status": "RESOLVED",
+    "adminPhone": "+91 98401 23456",
+    "backupAdminPhone": "+91 98402 77112",
+    "notificationChannel": "VOICE_CALL_AND_SMS",
+    "smsStatus": "DELIVERED",
+    "callStatus": "COMPLETED",
+    "callProvider": "TELEPHONY_GATEWAY_SERVICE",
+    "callRetries": 0,
+    "maxRetries": 2,
+    "callLogs": [
+      {
+        "timestamp": "2026-10-20T07:56:27.613Z",
+        "event": "ALERT_CREATED",
+        "details": "Emergency alert ALT-8546 created for patient Ramesh Sundaram (Age 64) (Phone Verified: +91 98401 54321). Location: Rehab Bay 104, Floor 3 Neurology Ward."
+      },
+      {
+        "timestamp": "2026-10-20T07:56:27.614Z",
+        "event": "OUTBOUND_CALL_SIGNALING",
+        "details": "Initiated high-priority emergency voice call to Dr. Priya Varma (+91 98401 23456). Provider Session ID: TELCO-CALL-1792482987614. Spoken notice: \"Emergency alert received. A patient needs assistance. Please check the emergency dashboard immediately.\""
+      },
+      {
+        "timestamp": "2026-10-20T07:56:27.615Z",
+        "event": "SMS_DISPATCHED",
+        "details": "Emergency SMS dispatched to Admin mobile +91 98401 23456 via TELEPHONY_SMS_GATEWAY.",
+        "providerResponse": {
+          "success": true,
+          "provider": "TELEPHONY_SMS_GATEWAY",
+          "sid": "SMS-GATEWAY-1792482987613"
+        }
+      },
+      {
+        "timestamp": "2026-10-20T07:56:30.415Z",
+        "event": "CALL_ANSWERED",
+        "details": "Voice call connected to Dr. Priya Varma. Played emergency text-to-speech advisory."
+      },
+      {
+        "timestamp": "2026-10-20T07:56:31.516Z",
+        "event": "ADMIN_ACKNOWLEDGED",
+        "details": "Alert acknowledged by Dr. Priya Varma. Call session marked completed."
+      },
+      {
+        "timestamp": "2026-10-20T07:56:35.080Z",
+        "event": "ALERT_RESOLVED",
+        "details": "Resolved by Dr. Priya Varma. Clinical notes: \"Patient repositioned by nurse; vitals normal.\""
+      },
+      {
+        "timestamp": "2026-10-20T07:56:39.809Z",
+        "event": "ADMIN_CALLED_PATIENT",
+        "details": "Dr. Priya Varma initiated direct outbound phone call to patient mobile (+91 98401 54321)."
+      }
+    ],
+    "details": "Patient slid down in bed",
+    "vitals": {
+      "heartRate": 94,
+      "symmetryScore": 78,
+      "immobilitySeconds": 0
+    },
+    "acknowledged": true,
+    "callSessionId": "TELCO-CALL-1792482987614",
+    "acknowledgedAt": "2026-10-20T07:56:31.516Z",
+    "acknowledgedBy": "Dr. Priya Varma",
+    "resolvedAt": "2026-10-20T07:56:35.080Z",
+    "resolutionNotes": "Patient repositioned by nurse; vitals normal."
+  },
+  {
+    "id": "ALT-1092",
+    "patientId": "PT-8831",
+    "patientName": "Ramesh Sundaram (Age 64)",
+    "patientPhone": "+91 98401 54321",
+    "verifiedPhone": true,
+    "room": "Rehab Bay 104",
+    "type": "FACIAL_DROOP",
+    "severity": "HIGH",
+    "timestamp": "2026-10-20T07:38:08.642Z",
+    "location": {
+      "label": "Neurology Ward - Rehab Bay 104, Floor 3 Central",
+      "latitude": 13.0827,
+      "longitude": 80.2707
+    },
+    "status": "RESOLVED",
+    "adminPhone": "+91 98401 23456",
+    "backupAdminPhone": "+91 98402 77112",
+    "notificationChannel": "VOICE_CALL_AND_SMS",
+    "smsStatus": "DELIVERED",
+    "callStatus": "COMPLETED",
+    "callProvider": "TELEPHONY_GATEWAY_SERVICE",
+    "callSessionId": "CALL-INIT-8841",
+    "callRetries": 0,
+    "maxRetries": 2,
+    "callLogs": [
+      {
+        "timestamp": "2026-10-20T07:38:08.643Z",
+        "event": "ALERT_DISPATCHED",
+        "details": "Facial asymmetry deviation detected. Dispatched automated call and SMS to Admin mobile."
+      },
+      {
+        "timestamp": "2026-10-20T07:39:08.643Z",
+        "event": "CALL_CONNECTED",
+        "details": "Admin answered automated voice notice. Spoken FAST alert played."
+      },
+      {
+        "timestamp": "2026-10-20T07:41:08.643Z",
+        "event": "ACKNOWLEDGED",
+        "details": "Acknowledged by Dr. Priya Varma via admin dashboard."
+      }
+    ],
+    "details": "Right hemifacial weakness detected (38% asymmetry deviation from baseline).",
+    "vitals": {
+      "heartRate": 88,
+      "symmetryScore": 62,
+      "immobilitySeconds": 24
+    },
+    "acknowledged": true,
+    "acknowledgedAt": "2026-10-20T07:41:08.643Z",
+    "acknowledgedBy": "Dr. Priya Varma",
+    "resolvedAt": "2026-10-20T07:46:08.643Z",
+    "resolutionNotes": "Patient assessed bedside. Symmetry stabilized after active facial range-of-motion therapy."
+  }
+]

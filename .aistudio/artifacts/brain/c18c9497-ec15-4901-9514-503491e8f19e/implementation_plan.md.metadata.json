@@ -1,0 +1,6 @@
+{
+  "summary": "Comprehensive architectural and design plan for dedicated Patient vs Admin portals, multi-field Admin OTP authentication (Name, Email, Phone, OTP), Doctor and Hospital collaboration network, strict patient-only camera/mic hardware isolation, and remote CCTV monitoring.",
+  "updatedAt": "2026-10-16T05:15:33.755411423Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

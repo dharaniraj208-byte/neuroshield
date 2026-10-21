@@ -1,0 +1,11 @@
+{
+  "name": "Remix NeuroShield - Stroke Rehab \u0026 Emergency AI Monitor",
+  "description": "Real-time AI stroke symptom detection, continuous live camera \u0026 CCTV monitoring, emergency admin dispatch with SMS/call alerts, multi-language \u0027Hey Neuro\u0027 voice assistant, and comprehensive neuromuscular rehab therapy suite.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
